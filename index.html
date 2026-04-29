@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安徽信息工程学院就业信息网</title>
+    <!-- 引入Bootstrap5 样式（快速实现响应式布局） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 全局样式 - 学校官网标准风格 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        /* 顶部导航栏 */
+        .navbar {
+            background-color: #003366 !important; /* 高校深蓝色主题 */
+            padding: 15px 0;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-size: 16px;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important; /* 悬浮高亮 */
+        }
+        /* 头部Banner */
+        .banner {
+            background: linear-gradient(to right, #004080, #0066cc);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* 模块标题样式 */
+        .section-title {
+            color: #003366;
+            border-left: 5px solid #0066cc;
+            padding-left: 15px;
+            margin: 30px 0 20px;
+            font-weight: bold;
+        }
+        /* 卡片样式 */
+        .card {
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #f5f7fa;
+            color: #003366;
+            font-weight: bold;
+        }
+        /* 底部版权 */
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        /* 链接样式 */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff6600;
+        }
+        /* 数据高亮 */
+        .data-highlight {
+            color: #cc0000;
+            font-weight: bold;
+        }
+        /* 链接组样式 */
+        .link-group {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. 顶部导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">安徽信息工程学院就业信息网</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                <li class="nav-item"><a class="nav-link" href="#recruit">校园招聘</a></li>
+                <li class="nav-item"><a class="nav-link" href="#career">生涯发展</a></li>
+                <li class="nav-item"><a class="nav-link" href="#exam">考研考公</a></li>
+                <li class="nav-item"><a class="nav-link" href="#law">法律知识</a></li>
+                <li class="nav-item"><a class="nav-link" href="#policy">就业政策</a></li>
+                <li class="nav-item"><a class="nav-link" href="#links">信息导航</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 2. 头部Banner -->
+<section id="home" class="banner" style="margin-top:70px">
+    <div class="container">
+        <h1>安徽信息工程学院就业信息网</h1>
+        <p class="lead mt-3">服务全校学子 · 助力优质就业 · 规划职业未来</p>
+    </div>
+</section>
+
+<!-- 3. 主容器 -->
+<div class="container">
+
+    <!-- ===================== 校园招聘模块 ===================== -->
+    <section id="recruit">
+        <h2 class="section-title">校园招聘模块</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="fw-bold">专为大三大四同学打造的校招信息专属入口，这里集中了学校官方组织的所有招聘资源，是你获取校招机会、对接优质企业的核心阵地📌</p>
+                <hr>
+                <h5 class="text-primary">一、核心数据：海量资源，一键触达</h5>
+                <ul>
+                    <li>累计举办<span class="data-highlight">149场</span>校园双选会，覆盖多行业、多地区的企业现场招聘；</li>
+                    <li>开展<span class="data-highlight">473场</span>企业专场宣讲会，包括元气森林等知名企业的线下/空中宣讲活动；</li>
+                    <li>在线招聘提供<span class="data-highlight">30431个</span>岗位，同步更新<span class="data-highlight">872份</span>招聘公告；</li>
+                    <li>企业资源库累计<span class="data-highlight">7199家</span>合作单位，覆盖制造、教育、互联网、文化传媒等多个领域。</li>
+                </ul>
+
+                <h5 class="text-primary mt-3">二、四大核心功能，校招全流程覆盖</h5>
+                <p><b>1. 校园双选会预告与回顾</b> <a href="https://aiit.ahbys.com/jobfairlist.html" target="_blank">立即访问</a></p>
+                <p>提前公示双选会时间、地点，支持线上/线下同步参与；官方发布，信息真实可靠。</p>
+
+                <p><b>2. 专场宣讲会信息汇总</b> <a href="https://aiit.ahbys.com/recruitlist.html" target="_blank">立即访问</a></p>
+                <p>实时更新宣讲会信息，支持空中宣讲，打破地域限制。</p>
+
+                <p><b>3. 招聘公告与岗位直达</b></p>
+                <a href="https://aiit.ahbys.com/joblist.html" target="_blank">岗位列表1</a> |
+                <a href="https://aiit.ahbys.com/joblist2.html" target="_blank">岗位列表2</a> |
+                <a href="https://aiit.ahbys.com/unitlist.html" target="_blank">企业列表</a>
+                <p>实时更新招聘简章，按时间排序展示岗位，快速筛选适配工作。</p>
+
+                <p><b>4. 就业指导配套支持</b></p>
+                <p>提供简历制作、面试技巧、劳动合同保护指南，全程助力求职。</p>
+
+                <h5 class="text-primary mt-3">三、模块优势</h5>
+                <p>✅ 信息权威零风险 ✅ 资源精准适配 ✅ 服务全链路 ✅ 机会不遗漏</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 生涯发展模块 ===================== -->
+    <section id="career">
+        <h2 class="section-title">生涯发展模块</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="fw-bold">专为同学们打造的职业成长与就业拓展专属板块，从咨询指导到资源链接，全方位助力职业规划与发展🚀</p>
+                <p><a href="https://aiit.ahbys.com/articlelist.html?pid=1009" target="_blank">官方入口</a></p>
+                <hr>
+                <h5 class="text-primary">一、三大核心板块，助力职业全周期成长</h5>
+                <p><b>1. 预约咨询：一对一专属职业指导</b></p>
+                <p>提供就业、创业、职业规划咨询服务，专业老师针对性解答迷茫、简历、面试、创业政策等问题。</p>
+
+                <p><b>2. 职业发展教育平台：权威职业资源直达</b></p>
+                <p>整合教育部大学生就业网、全国就业服务平台、学信网等官方入口，获取政策、课程、学历查询服务。</p>
+
+                <p><b>3. 求职就业工作坊：海量就业资源拓展</b></p>
+                <ul>
+                    <li>18条实用资源：求职技巧、全国就业平台、地方人才网、专项就业渠道；</li>
+                    <li>覆盖皖苏浙粤京沪等地区，支持异地就业、国际组织实习等多元化选择。</li>
+                </ul>
+
+                <h5 class="text-primary mt-3">二、核心优势</h5>
+                <p>✅ 资源权威全面 ✅ 服务针对性强 ✅ 职业成长全覆盖</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 考研考公模块 ===================== -->
+    <section id="exam">
+        <h2 class="section-title">考研考公服务模块</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="fw-bold">专为升学、考编同学打造的一站式服务平台，整合考研、公务员、事业单位、基层项目全流程信息📚</p>
+                <hr>
+                
+                <h5 class="text-primary">一、考研升学服务</h5>
+                <p><b>官方核心平台：</b></p>
+                <div class="link-group">
+                    <a href="https://yz.chsi.com.cn/" target="_blank">中国研究生招生信息网（研招网）</a> - 报名、查分、调剂官方唯一平台
+                </div>
+                <div class="link-group">
+                    <a href="https://www.chsi.com.cn/" target="_blank">学信网</a> - 学历认证、考研报名资格核验
+                </div>
+                <p><b>配套服务：</b>院校信息查询、备考资料分享、报录比查询、复试调剂指导</p>
+
+                <h5 class="text-primary mt-3">二、公务员&事业单位考试</h5>
+                <p><b>国家级官方平台：</b></p>
+                <div class="link-group">
+                    <a href="http://www.scs.gov.cn/" target="_blank">国家公务员局</a> - 国考公告、职位表、报名入口
+                </div>
+                
+                <p><b>安徽省官方平台：</b></p>
+                <div class="link-group">
+                    <a href="https://www.apta.gov.cn/" target="_blank">安徽省人事考试网</a> - 省考、事业单位统考
+                </div>
+                <div class="link-group">
+                    <a href="https://www.ahxf.gov.cn/" target="_blank">安徽先锋网</a> - 选调生、基层党建招聘
+                </div>
+
+                <h5 class="text-primary mt-3">三、基层服务项目</h5>
+                <ul>
+                    <li>三支一扶、特岗教师、西部计划、社区工作者招聘信息</li>
+                    <li>政策补贴、服务期满优惠政策、报考指导全解析</li>
+                </ul>
+
+                <p class="mt-3">✅ 官方信息直达 ✅ 备考资料免费 ✅ 报考流程清晰 ✅ 政策实时更新</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 毕业生法律知识 ===================== -->
+    <section id="law">
+        <h2 class="section-title">毕业生必备法律知识</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>毕业季来临，同学们即将走出校园、踏入职场。法律是维护自身合法权益的重要保障。</p>
+                <p>本板块系统梳理<span class="text-primary">劳动合同、社会保障、租房知识、权益保护</span>四大模块，解读高频法律问题，提升维权意识。</p>
+                <h5 class="mt-3">👉 完整内容查看：</h5>
+                <a href="https://24365.smartedu.cn/ncss/zt/flzs.shtml" target="_blank" class="btn btn-primary btn-sm">点击查看《毕业生必备法律知识》</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 就业创业政策 ===================== -->
+    <section id="policy">
+        <h2 class="section-title">高校毕业生就业创业政策</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>系统梳理高校毕业生就业创业核心扶持政策，清晰指引补贴申领条件与标准：</p>
+                <ul>
+                    <li>求职创业补贴</li>
+                    <li>一次性就业补贴</li>
+                    <li>一次性创业补贴</li>
+                    <li>灵活就业社保补贴</li>
+                </ul>
+                <h5 class="mt-3">👉 完整政策查看：</h5>
+                <a href="https://aiit.ahbys.com/article.html?aid=3757" target="_blank" class="btn btn-success btn-sm">点击查看就业创业政策要点</a>
+                <br><br>
+                <a href="https://aiit.ahbys.com/article.html?aid=5552" target="_blank">👉 安徽省高校毕业生就业创业政策百问</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 权威信息导航模块 ===================== -->
+    <section id="links">
+        <h2 class="section-title">权威信息网站导航</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="fw-bold">整合全校、全省、全国权威官方网站，一站式获取学习、就业、升学、生活全维度信息🔗</p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="text-primary">🏫 学校官方平台</h5>
+                        <div class="link-group"><a href="https://www.aiit.edu.cn/" target="_blank">安徽信息工程学院官网</a></div>
+                        <div class="link-group"><a href="https://aiit.ahbys.com/" target="_blank">学校就业信息网</a></div>
+                        
+                        <h5 class="text-primary mt-3">📚 教育部&国家级平台</h5>
+                        <div class="link-group"><a href="https://www.job.edu.cn/" target="_blank">国家大学生就业服务平台</a></div>
+                        <div class="link-group"><a href="https://www.moe.gov.cn/" target="_blank">中华人民共和国教育部</a></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-primary">💼 就业&人才服务</h5>
+                        <div class="link-group"><a href="https://www.ahrcw.com/" target="_blank">安徽人才网</a></div>
+                        <div class="link-group"><a href="https://job.mohrss.gov.cn/" target="_blank">中国公共招聘网</a></div>
+                        
+                        <h5 class="text-primary mt-3">🎯 考研考公专属</h5>
+                        <div class="link-group"><a href="https://yz.chsi.com.cn/" target="_blank">研招网</a></div>
+                        <div class="link-group"><a href="https://www.apta.gov.cn/" target="_blank">安徽人事考试网</a></div>
+                    </div>
+                </div>
+
+                <p class="mt-3 text-center">所有链接均为官方认证，安全可靠，无广告、无虚假信息！</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- 4. 底部版权 -->
+<footer class="footer">
+    <div class="container">
+        <p>安徽信息工程学院就业信息网 © 版权所有</p>
+        <p>服务学子 · 成就未来</p>
+    </div>
+</footer>
+
+<!-- 引入Bootstrap5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
